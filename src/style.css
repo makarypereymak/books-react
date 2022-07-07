@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+}
+
+.form {
+  margin-top: 40px;
+  display: grid;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .form {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.form__text-input {
+  border: 2px solid black;
+  font-size: 20px;
+  box-sizing: border-box;
+  height: 50px;
+  justify-self: center;
+}
+
+@media (min-width: 1200px) {
+  .form__text-input {
+    width: 700px;
+  }
+}
+
+.button {
+  grid-row: 4;
+  margin-top: 20px;
+  text-align: center;
+  justify-self: center;
+  width: 100px;
+  height: 50px;
+  border: 2px solid black;
+  font-size: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .button {
+    margin-top: 0;
+    justify-self: auto;
+    width: auto;
+  }
+}
+
+.button--download-more {
+  margin: 30px auto 30px auto;
+  display: block;
+}
+
+.form__select {
+  width: 200px;
+  height: 50px;
+  border: 2px solid black;
+  font-size: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
+@media (min-width: 1200px) {
+  .form__select {
+    margin-top: 0;
+  }
+}
+
+.books__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.books__total-result,
+.main-search__no-result {
+  margin: 30px auto 30px auto;
+  width: auto;
+  height: 50px;
+  box-sizing: border-box;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  width: max-content;
+}
+
+.books__item {
+  height: 400px;
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 2px solid black
+}
+
+@media (min-width: 1200px) {
+  .books__item {
+    width: 400px;
+  }
+}
+
+.books__link {
+  text-decoration: none;
+  color: black;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 55% 15% 10% 10%;
+  height: 400px;
+  width: 200px;
+}
+
+@media (min-width: 1200px) {
+  .books__link {
+    width: 400px;
+    grid-template-rows: 55% 25% 10% 10%;
+  }
+}
+
+.books__pic {
+  grid-row: 1;
+}
+
+.books__title {
+  text-align: center;
+  grid-row: 2;
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  .books__title {
+    font-size: 30px;
+  }
+}
+
+.books__categorie {
+  text-align: center;
+  grid-row: 3;
+}
+
+.books__author {
+  text-align: center;
+  grid-row: 4;
+}
+
+.post {
+  margin: 0 auto 0 auto;
+  height: 100vh;
+  padding: 20px;
+  background-color: gray;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .post {
+    margin: 40px auto 0 auto;
+    height: 80vh;
+    padding: 20px;
+    background-color: gray;
+    width: 800px;
+  }
+}
+
+.post__title {
+  width: 200px;
+  font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+  .post__title {
+    width: auto;
+    font-size: 30px;
+  }
+}
